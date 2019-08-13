@@ -15,7 +15,7 @@ setInterval(function() {
 
 if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/resources/service-worker.js').then(function(registration) {
+          navigator.serviceWorker.register('/pwa-examples-master/a2hs/sw.js').then(function(registration) {
               // Registration was successful
               console.log('ServiceWorker registration successful with scope: ', registration);
           }, function(err) {
