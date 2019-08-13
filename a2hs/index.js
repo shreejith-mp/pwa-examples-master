@@ -16,7 +16,7 @@ setInterval(function() {
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
            .register('/pwa-examples-master/a2hs/sw.js')
-           .then(function() { console.log('Service Worker Registered'); });
+           .then(function(reg) { console.log('Service Worker Registered 123', reg); });
 }
 
 // Code to handle install prompt on desktop
